@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">NiigataShrines</string>
-    <string name="title">新潟神社巡り</string>
+    <string name="title">/////新潟神社巡り/////</string>
     <string name="subtitle">～スピリチュアルな空気を求めて～</string>
     <string name="joetsu">上越地方</string>
     <string name="chuetsu">中越地方</string>
     <string name="kaetsu">下越地方</string>
+    <string name="explain">（解説文）</string>
 </resources>
