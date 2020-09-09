@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:src="@drawable/uesugi_kenshin"
     android:tileMode="repeat"
-    android:layout_height="10dp"
-    android:layout_width="10dp"/>
+    android:layout_height="5dp"
+    android:layout_width="5dp"/>
 
 
