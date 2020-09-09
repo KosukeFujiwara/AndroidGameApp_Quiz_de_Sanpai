@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap
+    xmlns:Android="http://schemas.android.com/apk/res/android"
+    Android:src="@drawable/japan_amaterasu_oomikami"
+    Android:gravity="bottom|left" />
+

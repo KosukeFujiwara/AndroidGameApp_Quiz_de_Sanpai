@@ -4,7 +4,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/repeat_layout"
+    android:background="@drawable/uesugi_kenshin"
+    android:gravity="center"
     android:orientation="vertical">
 
 
@@ -14,7 +15,7 @@
         android:layout_marginVertical="25dp"
         android:text="@string/exJoetsu"
         android:textStyle="italic"
-        android:background="@android:color/background_light"
+
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"
         android:textSize="45dp"/>

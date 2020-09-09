@@ -37,15 +37,19 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btnJoetsu:
                     intent = new Intent(MainActivity.this, JoetsuActivity.class);
                     startActivity(intent);
+                    break;
                 case R.id.btnChuetsu:
                     intent = new Intent(MainActivity.this, ChuetsuActivity.class);
                     startActivity(intent);
+                    break;
                 case R.id.btnKaetsu:
                     intent = new Intent(MainActivity.this, KaetsuActivity.class);
                     startActivity(intent);
+                    break;
                 case R.id.btnManners:
                     intent = new Intent(MainActivity.this, MannersActivity.class);
                     startActivity(intent);
+                    break;
             }
 
         }
