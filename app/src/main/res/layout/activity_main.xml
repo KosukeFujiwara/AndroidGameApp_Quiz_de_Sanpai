@@ -31,8 +31,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/explain"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:textStyle="bold"
+        android:textAppearance="center"
+        android:layout_marginHorizontal="@android:dimen/app_icon_size"
         android:layout_marginBottom="30dp"
         android:layout_gravity="center_horizontal"/>
 
@@ -40,6 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center">
 
         <Button
@@ -67,5 +70,12 @@
             android:text="@string/kaetsu"
             android:textStyle="bold"/>
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manners"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="25dp"/>
 
 </LinearLayout>
