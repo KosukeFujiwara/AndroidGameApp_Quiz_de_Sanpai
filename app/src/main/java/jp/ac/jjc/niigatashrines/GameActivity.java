@@ -57,7 +57,7 @@ public class GameActivity extends AppCompatActivity {
         TextView Qnum = findViewById(R.id.questionNum);
         TextView Qtext = findViewById(R.id.questionText);
 
-        ImageView imageView = findViewById(R.id.imV);
+        //ImageView imageView = findViewById(R.id.imV);
 
         for (int j = 0; j <= 6; j++) {
             NumList[j] = false;
@@ -67,14 +67,14 @@ public class GameActivity extends AppCompatActivity {
         //int count = 0;
         //while (count < Qtexts.length) {
         int NumQ = random.nextInt(6);
-        if (NumList[NumQ] == false) {
+        //if (NumList[NumQ] == false) {
             Qtext.setText(Qtexts[NumQ]);
             AnsBtn1.setText(Atexts[NumQ][1]);
             AnsBtn2.setText(Atexts[NumQ][2]);
             AnsBtn3.setText(Atexts[NumQ][3]);
             NumList[NumQ] = true;
             //count++;
-        }
+        //}
     }
         /*
         int NumA = random.nextInt(2) +1;
