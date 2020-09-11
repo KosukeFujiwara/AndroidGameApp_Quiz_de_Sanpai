@@ -17,12 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
         ButtonListener listener = new ButtonListener();
 
-        Button JoetsuB = findViewById(R.id.btnJoetsu);
+        /*Button JoetsuB = findViewById(R.id.btnJoetsu);
         JoetsuB.setOnClickListener(listener);
         Button ChuetsuB = findViewById(R.id.btnChuetsu);
         ChuetsuB.setOnClickListener(listener);
         Button KaetsuB = findViewById(R.id.btnKaetsu);
-        KaetsuB.setOnClickListener(listener);
+        KaetsuB.setOnClickListener(listener);*/
 
         Button MannersB = findViewById(R.id.btnManners);
         MannersB.setOnClickListener(listener);
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = getIntent();
             int Id = view.getId();
             switch (Id){
-                case R.id.btnJoetsu:
+                /*case R.id.btnJoetsu:
                     intent = new Intent(MainActivity.this, JoetsuActivity.class);
                     startActivity(intent);
                     break;
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btnKaetsu:
                     intent = new Intent(MainActivity.this, KaetsuActivity.class);
                     startActivity(intent);
-                    break;
+                    break;*/
                 case R.id.btnManners:
                     intent = new Intent(MainActivity.this, MannersActivity.class);
                     startActivity(intent);

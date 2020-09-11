@@ -5,12 +5,16 @@
     <string name="joetsu">⛩上越地方</string>
     <string name="chuetsu">⛩中越地方</string>
     <string name="kaetsu">⛩下越地方</string>
-    <string name="explain">神社・・・それは神聖不可侵の領域。新潟県神社庁によれば、神社本庁包括のものだけで県内に4710社あり、都道府県別では全国で最も多く存在します。このアプリでは、そんな
-        中からおすすめどころを厳選してピックアップしました。身近な神社にフラッと立ち寄って、心を清めてみませんか？</string>
+    <string name="explain">神社・・・それは神聖不可侵の領域。新潟県神社庁によれば、神社本庁包括のものだけで県内に4710社あり、都道府県別では全国で最も多く存在します。このアプリでは、
+        お作法をクイズ形式で学んだ後で、作者の独断と偏見によるお勧め神社をご紹介します。さあ、身近な神社にフラッと立ち寄って、心を清めてみませんか？</string>
     <string name="exJoetsu">上越地方の神社</string>
     <string name="exChuetsu">中越地方の神社</string>
     <string name="exKaetsu">下越地方の神社</string>
-    <string name="manners">神社でのお作法を学ぼう🙋</string>
+    <string name="manners">まずは神社でのお作法から🙋</string>
+    <string name="learn">お作法を学ぶ🙋</string>
     <string name="mannersTitle">お参りのマナー</string>
-    <string name="mannersExplain">皆さん、神社にお参りする時の作法はご存じですか？詳しい人もそうでない人も、さあレッツトライ！</string>
+    <string name="mannersExplain">皆さん、神社にお参りする時の作法はご存じですか？詳しい人もそうでない人も、まずはレッツトライ！</string>
+    <string name="gameover">gameover</string>
+    <string name="recommendTitle">あなたへのおススメはここ！</string>
+    <string name="toTop">トップ画面へ</string>
 </resources>

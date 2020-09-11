@@ -4,36 +4,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@drawable/figure_presentation"
-
+    android:background="@drawable/torii4_ishi"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="@string/mannersTitle"
-        android:textSize="45sp"
+
+        android:text="@string/recommendTitle"
+        android:textSize="25sp"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="normal"
         android:layout_gravity="center"/>
 
     <TextView
+        android:id="@+id/recommendShrine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        android:text="@string/mannersExplain"
-        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="130dp"
+        android:text=""
+        android:textSize="50sp"
         android:textStyle="italic"
         android:textColor="#111111"/>
 
     <Button
-        android:id="@+id/btnStart"
+        android:id="@+id/btnToTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/learn"
-        android:textSize="20sp"/>
+        android:text="@string/toTop"
+        android:textSize="15dp"/>
 
 </LinearLayout>
