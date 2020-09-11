@@ -17,16 +17,16 @@ import java.util.Random;
 public class GameActivity extends AppCompatActivity {
 
     final String[] Qtexts = {"神社の鳥居をくぐるときにはどうする？", "鳥居をくぐって参道を歩いています。意識すべきは？", "手水舎の前につきました。ここですべきは？",
-            "手水の手順で正しいのはどれ？", "お賽銭を入れたら、頭上に鈴があれば鳴らします・この際意識することは？", "さあ、礼拝です。一般的に推奨されるのはどれ？",
-            "拍手をする際、気を付けることは？"};
+                                "手水の手順で正しいのはどれ？", "お賽銭を入れたら、頭上に鈴があれば鳴らします・この際意識することは？", "さあ、礼拝です。一般的に推奨されるのはどれ？",
+                                "拍手をする際、気を付けることは？"};
 
     final String[][] Atexts = {{"神域に入るため「失礼します」と軽く一礼する。", "堂々と大手を振って入場する。", "キリストへの信心深さを示すため、十字を切る。"},
-            {"参道は神様の通り道なので、中央を避けて端のほうを歩く。", "正々堂々、中央を大手を振って歩く。", "犬の散歩ついでに、その辺にフンを置きながら歩く。"},
-            {"心身の浄化をする。","なんとなく、みんなやっているからやる。","意味なんてない。"},
-            {"右手に柄杓を持ち、左手→持ち替えて右手を洗い、最後に口を軽くゆすぐ。", "適当に水を手にかけるフリをする。","身を清めるため、頭から水をできるだけ沢山かける。"},
-            {"神様を「これからお参りしますよ」とお呼びする。","儀式的なもので深い意味はなさそう。","無意味だからやるだけ無駄。"},
-            {"二礼二拍一礼","ビジネスにおける軽い会釈程度の例で大丈夫","神がなんぼのもんじゃ、礼など不要"},
-            {"なるべく大きく手を叩く","自信がないのであまり音をたてずそーっと叩く","静かに手を合わせ、南無阿弥陀仏を唱える"}};
+                                {"参道は神様の通り道なので、中央を避けて端のほうを歩く。", "正々堂々、中央を大手を振って歩く。", "犬の散歩ついでに、その辺にフンを置きながら歩く。"},
+                                {"心身の浄化をする。","なんとなく、みんなやっているからやる。","意味なんてない。"},
+                                {"右手に柄杓を持ち、左手→持ち替えて右手を洗い、最後に口を軽くゆすぐ。", "適当に水を手にかけるフリをする。","身を清めるため、頭から水をできるだけ沢山かける。"},
+                                {"神様を「これからお参りしますよ」とお呼びする。","儀式的なもので深い意味はなさそう。","無意味だからやるだけ無駄。"},
+                                {"二礼二拍一礼","ビジネスにおける軽い会釈程度の例で大丈夫","神がなんぼのもんじゃ、礼など不要"},
+                                {"なるべく大きく手を叩く","自信がないのであまり音をたてずそーっと叩く","静かに手を合わせ、南無阿弥陀仏を唱える"}};
 
     final String TitleOK = "正解！";
     final String TitleNG = "不正解…";
@@ -34,7 +34,7 @@ public class GameActivity extends AppCompatActivity {
     final String TitleTooBad = "この不届き者が！";
 
     int i = 1;
-    boolean NumList[];
+    boolean NumList[] = new boolean[7];
     Random random = new Random();
     AlertDialog.Builder builder;
 
@@ -50,9 +50,9 @@ public class GameActivity extends AppCompatActivity {
         Button AnsBtn1 = findViewById(R.id.ans1);
         AnsBtn1.setOnClickListener(listener);
         Button AnsBtn2 = findViewById(R.id.ans2);
-        AnsBtn1.setOnClickListener(listener);
+        AnsBtn2.setOnClickListener(listener);
         Button AnsBtn3 = findViewById(R.id.ans3);
-        AnsBtn1.setOnClickListener(listener);
+        AnsBtn3.setOnClickListener(listener);
 
         TextView Qnum = findViewById(R.id.questionNum);
         TextView Qtext = findViewById(R.id.questionText);
@@ -68,7 +68,7 @@ public class GameActivity extends AppCompatActivity {
         //while (count < Qtexts.length) {
         int NumQ = random.nextInt(6);
         if (NumList[NumQ] == false) {
-            Qtext.setText(Qtexts[NumQ]); //NumQは配列番号なので、何か足したりせずそのままでOK！！
+            Qtext.setText(Qtexts[NumQ]);
             AnsBtn1.setText(Atexts[NumQ][1]);
             AnsBtn2.setText(Atexts[NumQ][2]);
             AnsBtn3.setText(Atexts[NumQ][3]);
