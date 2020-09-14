@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:background="@drawable/figure_presentation"
-
     android:orientation="vertical">
 
     <TextView
@@ -15,8 +14,9 @@
         android:text="@string/mannersTitle"
         android:textSize="45sp"
         android:textColor="@color/colorPrimaryDark"
-        android:textStyle="normal"
-        android:layout_gravity="center"/>
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:typeface="serif"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -26,7 +26,8 @@
         android:text="@string/mannersExplain"
         android:textSize="20sp"
         android:textStyle="italic"
-        android:textColor="#111111"/>
+        android:textColor="#111111"
+        android:typeface="serif"/>
 
     <Button
         android:id="@+id/btnStart"

@@ -3,8 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    android:layout_gravity="center">
 
     <TextView
         android:id="@+id/questionNum"
@@ -14,7 +15,7 @@
         android:text=""
         android:textSize="45sp"
         android:textColor="#111111"
-        android:textStyle="normal"
+        android:textStyle="bold"
         android:layout_gravity="center"/>
 
     <TextView
@@ -25,43 +26,41 @@
         android:layout_marginBottom="70dp"
         android:text=""
         android:textSize="20sp"
-        android:textStyle="italic"
-        android:textColor="#111111"/>
+        android:textStyle="normal"
+        android:textColor="#111111"
+        android:gravity="center_horizontal"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_margin="40dp">
-        <ImageView
-            android:id="@+id/imV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/gameover"/>
+        android:orientation="vertical">
         <Button
             android:id="@+id/ans1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text=""
             android:textSize="15sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_weight="1"/>
         <Button
             android:id="@+id/ans2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text=""
             android:textSize="15sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_weight="1"/>
         <Button
             android:id="@+id/ans3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text=""
             android:textSize="15sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_weight="1"/>
     </LinearLayout>
 
 </LinearLayout>
