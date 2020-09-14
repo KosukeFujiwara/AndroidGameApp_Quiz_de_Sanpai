@@ -39,6 +39,10 @@ public class GameActivity extends AppCompatActivity {
     boolean[] NumList = new boolean[7];
     Random random = new Random();
     AlertDialog.Builder builder;
+    private int AnswerSelect = 0;
+    private String RightAnswer;
+    private String WrongAnswer;
+    private String BadAnswer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +57,6 @@ public class GameActivity extends AppCompatActivity {
         i=1;
 
         ButtonListener listener = new ButtonListener();
-
         Button AnsBtn1 = findViewById(R.id.ans1);
         AnsBtn1.setOnClickListener(listener);
         Button AnsBtn2 = findViewById(R.id.ans2);
@@ -64,17 +67,35 @@ public class GameActivity extends AppCompatActivity {
         TextView Qnum = findViewById(R.id.questionNum);
         TextView Qtext = findViewById(R.id.questionText);
 
-        //ImageView imageView = findViewById(R.id.imV);
-
         Qnum.setText("第1問");
-        //int count = 0;
-        //while (count < Qtexts.length) {
+
         int NumQ = random.nextInt(7);
         //if (NumList[NumQ] == false) {
             Qtext.setText(Qtexts[NumQ]);
-            AnsBtn1.setText(Atexts[NumQ][0]);
-            AnsBtn2.setText(Atexts[NumQ][1]);
-            AnsBtn3.setText(Atexts[NumQ][2]);
+            RightAnswer = Atexts[NumQ][0];
+            WrongAnswer = Atexts[NumQ][1];
+            BadAnswer = Atexts[NumQ][2];
+            int R1 = random.nextInt(3);
+            switch (R1){
+                case 0:
+                    AnsBtn1.setText(Atexts[NumQ][0]);
+                    AnsBtn2.setText(Atexts[NumQ][1]);
+                    AnsBtn3.setText(Atexts[NumQ][2]);
+                break;
+                case 1:
+                    AnsBtn1.setText(Atexts[NumQ][1]);
+                    AnsBtn2.setText(Atexts[NumQ][2]);
+                    AnsBtn3.setText(Atexts[NumQ][0]);
+                break;
+                case 2:
+                    AnsBtn1.setText(Atexts[NumQ][2]);
+                    AnsBtn2.setText(Atexts[NumQ][0]);
+                    AnsBtn3.setText(Atexts[NumQ][1]);
+                break;
+            }
+            //AnsBtn1.setText(Atexts[NumQ][0]);
+            //AnsBtn2.setText(Atexts[NumQ][1]);
+            //AnsBtn3.setText(Atexts[NumQ][2]);
             NumList[NumQ] = true;
             //count++;
         //}
@@ -116,14 +137,34 @@ public class GameActivity extends AppCompatActivity {
                 }
             break;
         }*/
+    /*public void checkAnswer(View view){
+            Button ansBtn = findViewById(view.getId());
+            String btnText = ansBtn.getText().toString();
+            if(btnText.equals(RightAnswer)){
+                AnswerSelect = 0;
+            }else if(btnText.equals(WrongAnswer)){
+                AnswerSelect = 1;
+            }else if(btnText.equals(BadAnswer)){
+                AnswerSelect = 2;
+            }
+        }*/
 
     private class ButtonListener implements View.OnClickListener {
         @Override
         public void onClick(View view) {
-            int ID = view.getId();
-            //ImageView imV = findViewById(R.id.imV);
-            switch (ID) {
-                case R.id.ans1:
+            //int ID = view.getId();
+            Button ansBtn = findViewById(view.getId());
+            String btnText = ansBtn.getText().toString();
+            if(btnText.equals(RightAnswer)){
+                AnswerSelect = 0;
+            }else if(btnText.equals(WrongAnswer)){
+                AnswerSelect = 1;
+            }else if(btnText.equals(BadAnswer)){
+                AnswerSelect = 2;
+            }
+
+            switch (/*ID*/AnswerSelect) {
+                case /*R.id.ans1*/0:
                     if (i < Qtexts.length) {
                         builder.setTitle(TitleOK);
                         builder.setPositiveButton("次の問題へ", new DialogInterface.OnClickListener() {
@@ -141,9 +182,27 @@ public class GameActivity extends AppCompatActivity {
                                         String S = "第" + i + "問";
                                         Qnum.setText(S);
                                         Qtext.setText(Qtexts[NumQ]);
-                                        AnsBtn1.setText(Atexts[NumQ][0]);
-                                        AnsBtn2.setText(Atexts[NumQ][1]);
-                                        AnsBtn3.setText(Atexts[NumQ][2]);
+                                        RightAnswer = Atexts[NumQ][0];
+                                        WrongAnswer = Atexts[NumQ][1];
+                                        BadAnswer = Atexts[NumQ][2];
+                                        int R2 = random.nextInt(3);
+                                        switch (R2){
+                                            case 0:
+                                                AnsBtn1.setText(Atexts[NumQ][0]);
+                                                AnsBtn2.setText(Atexts[NumQ][1]);
+                                                AnsBtn3.setText(Atexts[NumQ][2]);
+                                                break;
+                                            case 1:
+                                                AnsBtn1.setText(Atexts[NumQ][1]);
+                                                AnsBtn2.setText(Atexts[NumQ][2]);
+                                                AnsBtn3.setText(Atexts[NumQ][0]);
+                                                break;
+                                            case 2:
+                                                AnsBtn1.setText(Atexts[NumQ][2]);
+                                                AnsBtn2.setText(Atexts[NumQ][0]);
+                                                AnsBtn3.setText(Atexts[NumQ][1]);
+                                                break;
+                                        }
                                         NumList[NumQ] = true;
                                     } else {
                                         if(i<=Qtexts.length)
@@ -166,7 +225,7 @@ public class GameActivity extends AppCompatActivity {
                         builder.show();
                     }
                 break;
-                case R.id.ans2:
+                case /*R.id.ans2*/ 1:
                     builder.setTitle(TitleNG);
                     builder.setPositiveButton("選びなおす", new DialogInterface.OnClickListener() {
                         @Override
@@ -176,7 +235,7 @@ public class GameActivity extends AppCompatActivity {
                     });
                     builder.show();
                 break;
-                case R.id.ans3:
+                case /*R.id.ans3*/ 2:
                     ImageView imv = new ImageView(getApplicationContext());
                     imv.setImageResource(R.drawable.kanden_gaikotsu);
                     builder.setTitle(TitleTooBad);

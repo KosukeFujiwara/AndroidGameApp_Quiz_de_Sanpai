@@ -42,7 +42,8 @@
             android:text=""
             android:textSize="15sp"
             android:textStyle="bold"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:onClick="checkAnswer"/>
         <Button
             android:id="@+id/ans2"
             android:layout_width="match_parent"
@@ -51,7 +52,8 @@
             android:text=""
             android:textSize="15sp"
             android:textStyle="bold"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:onClick="checkAnswer"/>
         <Button
             android:id="@+id/ans3"
             android:layout_width="match_parent"
@@ -60,7 +62,8 @@
             android:text=""
             android:textSize="15sp"
             android:textStyle="bold"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:onClick="checkAnswer"/>
     </LinearLayout>
 
 </LinearLayout>
