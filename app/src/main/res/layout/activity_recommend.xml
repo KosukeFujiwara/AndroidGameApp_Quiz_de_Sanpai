@@ -10,7 +10,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:text="@string/recommendTitle"
         android:textSize="25sp"
         android:textColor="@color/colorPrimaryDark"
@@ -24,7 +23,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginBottom="30dp"
         android:text=""
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textStyle="bold|italic"
         android:textColor="#111111"
         android:typeface="serif"
@@ -36,10 +35,10 @@
         android:layout_marginBottom="90dp"
         android:text=""
         android:textSize="15sp"
-        android:textStyle="italic"
+        android:textStyle="normal"
         android:textColor="#111111"
         android:typeface="serif"
-        android:layout_gravity="center_horizontal"/>
+        android:gravity="center"/>
     <Button
         android:id="@+id/btnToTop"
         android:layout_width="wrap_content"

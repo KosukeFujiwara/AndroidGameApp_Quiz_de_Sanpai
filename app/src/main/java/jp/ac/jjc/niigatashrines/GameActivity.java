@@ -155,7 +155,7 @@ public class GameActivity extends AppCompatActivity {
                         builder.show();
                     } else {
                         builder.setTitle(TitleClear);
-                        builder.setPositiveButton("おめでとうございます！あなたにおススメの神社はこちら！", new DialogInterface.OnClickListener() {
+                        builder.setPositiveButton("おめでとうございます！あなたへのおススメの神社はこちら！", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         Intent intent = new Intent(GameActivity.this, RecommendActivity.class);
