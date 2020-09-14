@@ -124,33 +124,35 @@ public class GameActivity extends AppCompatActivity {
             //ImageView imV = findViewById(R.id.imV);
             switch (ID) {
                 case R.id.ans1:
-                    if (i <= 7) {
+                    if (i < Qtexts.length) {
                         builder.setTitle(TitleOK);
                         builder.setPositiveButton("次の問題へ", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                int count = 1;
                                 TextView Qtext = findViewById(R.id.questionText);
                                 TextView Qnum = findViewById(R.id.questionNum);
                                 Button AnsBtn1 = findViewById(R.id.ans1);
                                 Button AnsBtn2 = findViewById(R.id.ans2);
                                 Button AnsBtn3 = findViewById(R.id.ans3);
-                                while (count <= Qtexts.length) {
-                                    int NumQ = random.nextInt(7);
+                                int NumQ = random.nextInt(7);
+                                if (i <= Qtexts.length) {
                                     if (!NumList[NumQ]) {
-                                        count++;
-                                        String S = "第" + count + "問";
+                                        i++;
+                                        String S = "第" + i + "問";
                                         Qnum.setText(S);
                                         Qtext.setText(Qtexts[NumQ]);
                                         AnsBtn1.setText(Atexts[NumQ][0]);
                                         AnsBtn2.setText(Atexts[NumQ][1]);
                                         AnsBtn3.setText(Atexts[NumQ][2]);
                                         NumList[NumQ] = true;
-                                        i++;
+                                    } else {
+                                        if(i<=Qtexts.length)
+                                        onClick(dialog, which);
                                     }
                                 }
                             }
                         });
+                        builder.show();
                     } else {
                         builder.setTitle(TitleClear);
                         builder.setPositiveButton("おめでとうございます！あなたにおススメの神社はこちら！", new DialogInterface.OnClickListener() {
@@ -161,9 +163,9 @@ public class GameActivity extends AppCompatActivity {
                                     }
                                 }
                         );
+                        builder.show();
                     }
-                    builder.show();
-                    break;
+                break;
                 case R.id.ans2:
                     builder.setTitle(TitleNG);
                     builder.setPositiveButton("選びなおす", new DialogInterface.OnClickListener() {
