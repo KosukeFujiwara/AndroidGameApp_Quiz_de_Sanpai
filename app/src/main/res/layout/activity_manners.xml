@@ -16,7 +16,11 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         android:layout_gravity="center"
-        android:typeface="serif"/>
+        android:typeface="serif"
+        android:shadowColor="#808080"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="5.0"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -24,7 +28,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
         android:text="@string/mannersExplain"
-        android:textSize="20sp"
+        android:textSize="17sp"
         android:textStyle="italic"
         android:textColor="#111111"
         android:typeface="serif"/>

@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">NiigataShrines</string>
-    <string name="title">越後のお社詣で</string>
-    <string name="subtitle">～ スピリチュアルな空気を求めて ～</string>
+    <string name="app_name">Quiz_de_Sanpai!!</string>
+    <string name="title">Quiz de Sanpai!!</string>
+    <string name="subtitle">～  越 後 の 社  ～</string>
     <string name="joetsu">⛩上越地方</string>
     <string name="chuetsu">⛩中越地方</string>
     <string name="kaetsu">⛩下越地方</string>
@@ -11,10 +11,10 @@
     <string name="exChuetsu">中越地方の神社</string>
     <string name="exKaetsu">下越地方の神社</string>
     <string name="manners">まずは神社でのお作法から</string>
-    <string name="learn">クイズスタート👉</string>
+    <string name="learn">Quiz START!!👉</string>
     <string name="mannersTitle">お参りのマナー</string>
     <string name="mannersExplain">皆さん、神社にお参りする時の作法はご存じですか？詳しい人もそうでない人も、まずはレッツトライ！</string>
     <string name="gameover">gameover</string>
     <string name="recommendTitle">あなたへのおススメはここ！</string>
-    <string name="toTop">トップ画面へ</string>
+    <string name="toTop">Topへ</string>
 </resources>

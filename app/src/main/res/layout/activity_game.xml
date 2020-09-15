@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorAccent"
+    android:background="@drawable/mark_question"
+    android:backgroundTint="@color/colorAccent"
     android:layout_gravity="center">
 
     <TextView

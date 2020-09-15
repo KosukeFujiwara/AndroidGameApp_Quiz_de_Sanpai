@@ -27,18 +27,26 @@
         android:textStyle="bold|italic"
         android:textColor="#111111"
         android:typeface="serif"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="#808080"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="5.0"/>
     <TextView
         android:id="@+id/recommendText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="90dp"
         android:text=""
-        android:textSize="15sp"
-        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textStyle="italic"
         android:textColor="#111111"
-        android:typeface="serif"
-        android:gravity="center"/>
+        android:typeface="normal"
+        android:gravity="center"
+        android:shadowColor="#808080"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="1.0"/>
     <Button
         android:id="@+id/btnToTop"
         android:layout_width="wrap_content"
