@@ -1,18 +1,15 @@
 package jp.ac.jjc.niigatashrines;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
-import android.os.Process;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
@@ -20,14 +17,14 @@ public class GameActivity extends AppCompatActivity {
 
     final String[] Qtexts = {"神社の鳥居をくぐるときにはどうする？", "鳥居をくぐって参道を歩いています。意識すべきは？", "手水舎の前につきました。ここですべきは？",
                                 "手水の手順で正しいのはどれ？", "お賽銭を入れ、頭上に鈴があれば鳴らします。この際意識することは？", "さあ、礼拝です。一般的に推奨されるのはどれ？",
-                                "拍手をする際、気を付けることは？"};
+                                "お参りで拍手をする際、気を付けることは？"};
 
     final String[][] Atexts = {{"神域に入るため「失礼します」と軽く一礼する", "堂々と大手を振って入場する", "キリストへの信心深さを示すため、十字を切る"},
                                 {"参道は神様の通り道なので、中央を避けて端のほうを歩く", "正々堂々、大手を振って中央を歩く", "犬の散歩ついでに、その辺にフンを置きながら歩く"},
-                                {"心身の浄化をする","なんとなく、みんなやっているからやる","意味なんてねぇわ"},
-                                {"右手に柄杓を持ち、左手→持ち替えて右手を洗い、最後に口を軽くゆすぐ", "適当に水を手にかけるフリをする","豪快にやった方が面白いので、頭から水をできるだけ沢山かける"},
+                                {"心身の浄化をする","なんとなく、みんなやっているからやる","意味なんてあるはずがない"},
+                                {"右手に柄杓を持ち左手を洗い、持ち替えて右手を、最後にまた右手に持ち替えて口を軽くゆすぐ", "適当に水を手にかけるフリをする","豪快にやった方が面白いので、頭から水をできるだけ沢山かける"},
                                 {"神様を「これからお参りしますよ」とお呼びする","儀式的なもので深い意味はなさそう","無意味だからやるだけ無駄"},
-                                {"二礼二拍一礼","ビジネスにおける軽い会釈程度の例で大丈夫","神がなんぼのもんじゃ、礼など不要"},
+                                {"二礼二拍一礼","ビジネスにおける軽い会釈程度の礼で大丈夫","神がなんぼのもんじゃ、礼など不要"},
                                 {"なるべく大きく手を叩く","自信がないのであまり音をたてずそーっと叩く","静かに手を合わせ、南無阿弥陀仏を唱える"}};
 
     final String TitleOK = "正解！";
