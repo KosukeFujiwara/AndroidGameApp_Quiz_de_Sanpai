@@ -1,48 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="@drawable/figure_presentation"
-    android:orientation="vertical">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="@string/mannersTitle"
-        android:textSize="45sp"
-        android:textColor="@color/colorPrimaryDark"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:typeface="serif"
-        android:shadowColor="#808080"
-        android:shadowDx="5.0"
-        android:shadowDy="5.0"
-        android:shadowRadius="5.0"/>
-
-    <TextView
+<ScrollView
+    android:id="@+id/ScrollView"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        android:text="@string/mannersExplain"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="#111111"
-        android:typeface="serif"
-        android:shadowColor="#808080"
-        android:shadowDx="5.0"
-        android:shadowDy="5.0"
-        android:shadowRadius="5.0"/>
+        android:gravity="center"
+        android:background="@drawable/figure_presentation"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/learn"
-        android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/mannersTitle"
+            android:textSize="45sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:typeface="serif"
+            android:shadowColor="#808080"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:shadowRadius="5.0"/>
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/mannersExplain"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:typeface="serif"
+            android:shadowColor="#808080"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:shadowRadius="5.0"/>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/learn"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</ScrollView>
